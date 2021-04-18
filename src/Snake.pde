@@ -18,30 +18,30 @@ class Snake{
 
 	void keyPress(){
 		switch (keyCode){
-		case 87:
-			if (this.vel.x==0&&this.vel.y==1){
-				this.die();
-			}
-			this.vel.set(0,-1);
-			break;
-		case 65:
-			if (this.vel.x==1&&this.vel.y==0){
-				this.die();
-			}
-			this.vel.set(-1,0);
-			break;
-		case 83:
-			if (this.vel.x==0&&this.vel.y==-1){
-				this.die();
-			}
-			this.vel.set(0,1);
-			break;
-		case 68:
-			if (this.vel.x==-1&&this.vel.y==0){
-				this.die();
-			}
-			this.vel.set(1,0);
-			break;
+			case 87:
+				if (this.vel.x==0&&this.vel.y==1){
+					this.die();
+				}
+				this.vel.set(0,-1);
+				break;
+			case 65:
+				if (this.vel.x==1&&this.vel.y==0){
+					this.die();
+				}
+				this.vel.set(-1,0);
+				break;
+			case 83:
+				if (this.vel.x==0&&this.vel.y==-1){
+					this.die();
+				}
+				this.vel.set(0,1);
+				break;
+			case 68:
+				if (this.vel.x==-1&&this.vel.y==0){
+					this.die();
+				}
+				this.vel.set(1,0);
+				break;
 		}
 	}
 
